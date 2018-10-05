@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Object</h1>
+  <h2>Create</h2>
+
+  <script>
+  var coworkers = {
+    "programmer":"egoing",
+    "designer":"leezche" //object 만드는 법.
+  };
+  document.write("programmer : "+coworkers.programmer+"<br>"); //위에서 쓴거 아래에서 소환
+  document.write("designer : "+coworkers.designer+"<br>");
+  coworkers.bookkeeper = "duru"; //데이터 추가하는 방법 1
+  document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+  coworkers["data scientist"] = "taeho"; // 추가하는 방법 2 (띄어쓰기 가능)
+  document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+  </script>
+
+  <h2>Iterate</h2>
+  <script> //coworkers 데이터 모조리 다 가져오기
+  //for를 쓰면 coworkers 변수 안에 있는 key값 (programmer, designer...)을 가져옴
+  //배열에서는 key가 아니라 index라는 표현을 씀
+  //아래처럼 하럼 위랑 똑같은 결과 출력.
+  for(var key in coworkers) {
+    document.write(key+' : '+coworkers[key]+'<br>');
+  }
+  </script>
+
+  <h2>Property & Method</h2>
+  <script> //함수 추가하기
+  //function showAll()이나 var showAll = function()이랑 같다.
+  //객체(coworkers)에 소속된 함수(showAll)를 Method라 한다.
+  //객체(coworkers)에 소속된 변수(programmer, bookkeeper...)를 Property라 한다.
+    coworkers.showAll = function(){
+      for(var key in this) {
+        document.write(key+' : '+this[key]+'<br>');
+      }
+    }
+    coworkers.showAll();
+  </script>
+
+</body>
+</html>
