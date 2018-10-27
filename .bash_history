@@ -25,3 +25,20 @@ ruby 2.classinstance.rb
 ruby 2.classinstance.rb
 ruby 2.classinstance.rb
 exit
+ls
+cd insomenia
+ruby 2.classinstance.rb
+ruby 2.classinstance.rb
+echo $home
+echo $HOME
+ruby 2.classinstance.rb
+ruby 2.classinstance.rb
+ruby 2.classinstance.rb
+ruby second.rb
+ruby second.rb
+ruby second.rb
+ruby second.rb
+ruby third.rb
+ruby third.rb
+ruby third.rb
+ruby third.rb
